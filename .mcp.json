@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "mamba-github-followers-following-export": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mambalabsdev/mcp-github-followers-following-export"
+      ],
+      "env": {
+        "APIFY_TOKEN": "your-apify-token"
+      }
+    }
+  }
+}

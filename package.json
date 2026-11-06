@@ -1,0 +1,50 @@
+{
+  "name": "@mambalabsdev/mcp-github-followers-following-export",
+  "version": "1.0.0",
+  "description": "MCP server for GitHub Followers and Following Export. Full follower and following lists of public GitHub accounts, with a completeness report per list. No GitHub login needed. Runs on Apify. Clay-ready output.",
+  "type": "module",
+  "bin": {
+    "mcp-github-followers-following-export": "./build/index.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "github",
+    "followers",
+    "following",
+    "developers",
+    "open-source",
+    "apify",
+    "clay"
+  ],
+  "author": "Mamba Labs <labs@mambamindsetgrowth.com>",
+  "license": "MIT",
+  "homepage": "https://apify.com/mambalabs/github-followers-following-export",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mambalabsdev/mcp-github-followers-following-export"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "5.9.3"
+  },
+  "mcpName": "com.mambabuilt/mcp-github-followers-following-export"
+}
